@@ -1,0 +1,133 @@
+.footer {
+    margin: 80px 0;
+
+    @include media (800px) {
+        margin: 40px 0;
+    }
+
+    &_logo {
+        width: 150px;
+    }
+
+    &_box {
+        display: flex;
+        justify-content: space-between;
+
+        @include media(1150px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        @include media(650px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &_card {
+        display: flex;
+        flex-direction: column;
+
+        @include media(650px) {
+            border-top: 1px solid rgba(103, 103, 103, 1);
+            padding-top: 20px;
+
+            &.asd {
+                border: none;
+            }
+        }
+    }
+
+    &_text {
+        font-family: 'Inter', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19.5px;
+        color: #000;
+        margin-top: 20px;
+    }
+
+    &_social {
+        margin-top: 10px;
+        display: flex;
+        gap: 12px;
+    }
+
+    &_address {
+        margin-top: 30px;
+        font-family: 'Inter', sans-serif;
+        font-size: 13.13px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: rgba(103, 103, 103, 1);
+    }
+
+    &_list {
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    &_link {
+        font-family: 'Inter', sans-serif;
+        font-size: 13.59px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    &_form {
+        display: flex;
+        gap: 10px;
+        margin-top: 70px;
+    }
+
+    &_input {
+        border: none;
+        padding: 10px 5px;
+        border-bottom: 1px solid rgba(214, 214, 214, 1);
+        width: 200px;
+        outline: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 14.3px;
+        font-weight: 400;
+        line-height: 17.3px;
+
+    }
+
+    &_btn {
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        background: black;
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-size: 13.36px;
+        font-weight: 400;
+        line-height: 15px;
+        text-align: center;
+        border-radius: 6px;
+
+    }
+
+    &_text2 {
+        font-family: 'Inter', sans-serif;
+        font-size: 12.91px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        margin-top: 20px;
+        color: rgba(103, 103, 103, 1);
+
+        a {
+            font-family: 'Inter', sans-serif;
+            font-size: 12.91px;
+            font-weight: 400;
+            line-height: 18.2px;
+            text-align: left;
+
+        }
+    }
+}

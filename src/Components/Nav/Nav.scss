@@ -1,0 +1,93 @@
+.nav {
+    background: white;
+    padding: 22px 0;
+
+    &_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &_list {
+        display: flex;
+        list-style: none;
+        gap: 25px;
+
+        @include media(800px) {
+            flex-direction: column;
+            position: absolute;
+            background: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            align-items: center;
+            height: 80vh;
+            z-index: 111;
+            padding-top: 100px;
+            transition: .5s;
+            transform: translateY(-150%);
+
+            &.active {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &_link {
+        font-family: 'Inter', sans-serif;
+        font-size: 13.59px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: left;
+        color: black;
+        text-decoration: none;
+    }
+
+    &_icon {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        &_phone {
+            color: black;
+            font-size: 22px;
+        }
+    }
+
+    &_menu,
+    &_close {
+        font-size: 32px;
+        color: black;
+        display: none;
+
+        @include media(800px) {
+            display: block;
+        }
+    }
+
+    &_close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    &_bottom {
+        background-color: #000;
+        color: white;
+        text-align: center;
+        padding: 7px 0;
+        font-family: 'Inter', sans-serif;
+        font-size: 12.8px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: center;
+
+        @include media(800px) {
+            padding: 7px 20px;
+        }
+        @include media(600px) {
+           font-size: 10px;
+        }
+    }
+}

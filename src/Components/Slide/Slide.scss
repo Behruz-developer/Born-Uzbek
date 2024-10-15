@@ -1,0 +1,17 @@
+.slide {
+    width: 100%;
+
+    &_box {
+        display: flex;
+        @include media(800px){
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        img {
+            max-width: 319px;
+            width: 100%;
+            display: block;
+        }
+    }
+
+}
