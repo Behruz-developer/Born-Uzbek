@@ -7,7 +7,12 @@
         justify-content: space-between;
         align-items: center;
     }
+    &_logo{
 
+        img{
+            width: 215px;
+        }
+    }
     &_list {
         display: flex;
         list-style: none;
