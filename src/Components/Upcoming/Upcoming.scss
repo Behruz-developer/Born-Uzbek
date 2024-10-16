@@ -1,16 +1,20 @@
 .upcoming {
     display: flex;
     width: 100%;
-    @include media(800px){
+
+    @include media(800px) {
         flex-direction: column;
     }
+
     &_card {
         width: 50%;
         position: relative;
-        @include media(800px){
-           width: 100%;
+
+        @include media(800px) {
+            width: 100%;
         }
-        &_txt{
+
+        &_txt {
             position: absolute;
             top: 0;
             left: 40px;
@@ -19,15 +23,20 @@
             justify-content: space-between;
             height: 100%;
             padding: 40px 0;
-            @include media(800px){
+
+            @include media(800px) {
                 padding: 20px 0;
+                left: 20px;
+
             }
         }
+
         &_img {
             width: 100%;
             display: block;
         }
     }
+
     &_text {
         font-family: 'Inter', sans-serif;
         font-size: 15.75px;
@@ -35,7 +44,8 @@
         line-height: 20.8px;
         text-align: left;
         color: white;
-        &.black1{
+
+        &.black1 {
             color: black;
         }
     }
@@ -49,11 +59,16 @@
         text-align: left;
         color: white;
 
-        &.black1{
+        &.black1 {
             color: black;
         }
-        @include media(800px){
+
+        @include media(800px) {
             font-size: 25px;
+        }
+
+        @include media(600px) {
+            font-size: 22px;
         }
     }
 }
