@@ -27,6 +27,7 @@ const App = () => {
         клиентов.
       </h2>
       <Slide/>
+      <Slide/>
       <Footer/>
     </div>
   )

@@ -2,16 +2,23 @@
     width: 100%;
 
     &_box {
+        width: 100%;
         display: flex;
-        @include media(800px){
+
+        @include media(800px) {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
         }
+
         img {
-            max-width: 319px;
             width: 100%;
             display: block;
         }
+    }
+
+    &_card {
+        max-width: 319px;
+        width: 100%;
     }
 
 }

@@ -17,14 +17,16 @@ const Nav = () => {
 
                         <ul className={`nav_list ${active && "active"}`}>
                             <IoMdClose className='nav_close' onClick={() => setActive(false)} />
-                            <li><a href="#!" className="nav_link">Каталог</a></li>
+                            <li><a href="#!" className="nav_link">Продукти</a></li>
                             <li><a href="#!" className="nav_link">Новинки</a></li>
                             <li><a href="#!" className="nav_link">Контакты</a></li>
                         </ul>
                         <div className='nav_icon'>
-                            <a href="#!">
-                                <FaPhone className='nav_icon_phone' />
-                            </a>
+                            <div className="lang">
+                                <p className="lang_text">UZ</p>
+                                <div className="lang_border"></div>
+                                <p className="lang_text">RU</p>
+                            </div>
                             <a href="#!">
                                 <IoMenu className='nav_menu' onClick={() => setActive(true)} />
                             </a>
