@@ -40,7 +40,7 @@
         @include media(650px) {
             border-top: 1px solid rgba(103, 103, 103, 1);
             padding-top: 20px;
-
+            align-items: center;
             &.asd {
                 border: none;
             }
@@ -48,7 +48,7 @@
     }
 
     &_text {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 15px;
         font-weight: 400;
         line-height: 19.5px;
@@ -64,25 +64,34 @@
 
     &_address {
         margin-top: 30px;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 13.13px;
         font-weight: 400;
         line-height: 18.2px;
         text-align: left;
-        color: rgba(103, 103, 103, 1);
+        color: #000;
 
         @include media (600px) {
             margin-top: 15px;
+            text-align: center;
         }
     }
 
     &_list {
         margin-top: 20px;
         list-style: none;
+
+        @include media (600px){
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+
     }
 
     &_link {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 16px;
         font-weight: 400;
         line-height: 22px;
@@ -106,7 +115,7 @@
         border-bottom: 1px solid rgba(214, 214, 214, 1);
         width: 200px;
         outline: none;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 14.3px;
         font-weight: 400;
         line-height: 17.3px;
@@ -119,7 +128,7 @@
         outline: none;
         background: black;
         color: white;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 13.36px;
         font-weight: 400;
         line-height: 15px;
@@ -129,7 +138,7 @@
     }
 
     &_text2 {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 12.91px;
         font-weight: 400;
         line-height: 18.2px;
@@ -138,7 +147,7 @@
         color: rgba(103, 103, 103, 1);
 
         a {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Montserrat', sans-serif;
             font-size: 12.91px;
             font-weight: 400;
             line-height: 18.2px;

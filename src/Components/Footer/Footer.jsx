@@ -36,7 +36,7 @@ const Footer = () => {
                             <li><a href="#!" className="footer_link">Отзывы</a></li>
                         </ul>
                     </div>
-                    <div className="footer_card">
+                    {/* <div className="footer_card">
                         <p className="footer_link"> ПОДПИСАТЬСЯ НА РАССЫЛКУ</p>
                         <div className="footer_form">
                             <input type="text" className='footer_input' placeholder='EMAIL' />
@@ -46,7 +46,7 @@ const Footer = () => {
                             Подписываясь, вы соглашаетесь на обработку данных <br />
                             в соответствии <a href="#!">с политикой конфиденциальности</a>
                         </p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
